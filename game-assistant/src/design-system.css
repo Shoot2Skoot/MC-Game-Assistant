@@ -1,0 +1,256 @@
+:root {
+	/* Colors */
+	--color-primary: #4a90e2;
+	--color-primary-light: #72abed;
+	--color-primary-dark: #2171c7;
+
+	--color-secondary: #6c757d;
+	--color-secondary-light: #868e96;
+	--color-secondary-dark: #495057;
+
+	--color-success: #28a745;
+	--color-danger: #dc3545;
+	--color-warning: #ffc107;
+	--color-info: #17a2b8;
+
+	--color-background: #ffffff;
+	--color-surface: #f8f9fa;
+	--color-text: #212529;
+	--color-text-light: #6c757d;
+
+	/* Typography */
+	--font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
+	--font-family-heading: var(--font-family-base);
+
+	--font-size-xs: 0.75rem; /* 12px */
+	--font-size-sm: 0.875rem; /* 14px */
+	--font-size-base: 1rem; /* 16px */
+	--font-size-lg: 1.125rem; /* 18px */
+	--font-size-xl: 1.25rem; /* 20px */
+	--font-size-2xl: 1.5rem; /* 24px */
+	--font-size-3xl: 1.875rem; /* 30px */
+	--font-size-4xl: 2.25rem; /* 36px */
+
+	/* Spacing */
+	--spacing-1: 0.25rem; /* 4px */
+	--spacing-2: 0.5rem; /* 8px */
+	--spacing-3: 0.75rem; /* 12px */
+	--spacing-4: 1rem; /* 16px */
+	--spacing-5: 1.5rem; /* 24px */
+	--spacing-6: 2rem; /* 32px */
+	--spacing-8: 3rem; /* 48px */
+	--spacing-10: 4rem; /* 64px */
+
+	/* Border Radius */
+	--radius-sm: 0.125rem; /* 2px */
+	--radius-base: 0.25rem; /* 4px */
+	--radius-md: 0.375rem; /* 6px */
+	--radius-lg: 0.5rem; /* 8px */
+	--radius-xl: 1rem; /* 16px */
+	--radius-full: 9999px;
+
+	/* Shadows */
+	--shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	--shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+		0 1px 2px -1px rgba(0, 0, 0, 0.1);
+	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+		0 2px 4px -2px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+		0 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+	/* Transitions */
+	--transition-base: all 0.2s ease-in-out;
+	--transition-slow: all 0.3s ease-in-out;
+	--transition-fast: all 0.1s ease-in-out;
+}
+
+/* Base styles */
+body {
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-base);
+	color: var(--color-text);
+	line-height: 1.5;
+	background-color: var(--color-background);
+}
+
+/* Typography utility classes */
+.text-xs {
+	font-size: var(--font-size-xs);
+}
+.text-sm {
+	font-size: var(--font-size-sm);
+}
+.text-base {
+	font-size: var(--font-size-base);
+}
+.text-lg {
+	font-size: var(--font-size-lg);
+}
+.text-xl {
+	font-size: var(--font-size-xl);
+}
+.text-2xl {
+	font-size: var(--font-size-2xl);
+}
+.text-3xl {
+	font-size: var(--font-size-3xl);
+}
+.text-4xl {
+	font-size: var(--font-size-4xl);
+}
+
+/* Color utility classes */
+.text-primary {
+	color: var(--color-primary);
+}
+.text-secondary {
+	color: var(--color-secondary);
+}
+.text-success {
+	color: var(--color-success);
+}
+.text-danger {
+	color: var(--color-danger);
+}
+.text-warning {
+	color: var(--color-warning);
+}
+.text-info {
+	color: var(--color-info);
+}
+
+.bg-primary {
+	background-color: var(--color-primary);
+}
+.bg-secondary {
+	background-color: var(--color-secondary);
+}
+.bg-success {
+	background-color: var(--color-success);
+}
+.bg-danger {
+	background-color: var(--color-danger);
+}
+.bg-warning {
+	background-color: var(--color-warning);
+}
+.bg-info {
+	background-color: var(--color-info);
+}
+
+/* Spacing utility classes */
+.m-1 {
+	margin: var(--spacing-1);
+}
+.m-2 {
+	margin: var(--spacing-2);
+}
+.m-3 {
+	margin: var(--spacing-3);
+}
+.m-4 {
+	margin: var(--spacing-4);
+}
+.m-5 {
+	margin: var(--spacing-5);
+}
+
+.p-1 {
+	padding: var(--spacing-1);
+}
+.p-2 {
+	padding: var(--spacing-2);
+}
+.p-3 {
+	padding: var(--spacing-3);
+}
+.p-4 {
+	padding: var(--spacing-4);
+}
+.p-5 {
+	padding: var(--spacing-5);
+}
+
+/* Border radius utility classes */
+.rounded-sm {
+	border-radius: var(--radius-sm);
+}
+.rounded {
+	border-radius: var(--radius-base);
+}
+.rounded-md {
+	border-radius: var(--radius-md);
+}
+.rounded-lg {
+	border-radius: var(--radius-lg);
+}
+.rounded-xl {
+	border-radius: var(--radius-xl);
+}
+.rounded-full {
+	border-radius: var(--radius-full);
+}
+
+/* Shadow utility classes */
+.shadow-sm {
+	box-shadow: var(--shadow-sm);
+}
+.shadow {
+	box-shadow: var(--shadow-base);
+}
+.shadow-md {
+	box-shadow: var(--shadow-md);
+}
+.shadow-lg {
+	box-shadow: var(--shadow-lg);
+}
+
+/* Common component styles */
+.button {
+	padding: var(--spacing-2) var(--spacing-4);
+	border-radius: var(--radius-base);
+	font-size: var(--font-size-base);
+	transition: var(--transition-base);
+	cursor: pointer;
+	border: none;
+}
+
+.button-primary {
+	background-color: var(--color-primary);
+	color: white;
+}
+
+.button-primary:hover {
+	background-color: var(--color-primary-dark);
+}
+
+.button-secondary {
+	background-color: var(--color-secondary);
+	color: white;
+}
+
+.button-secondary:hover {
+	background-color: var(--color-secondary-dark);
+}
+
+.card {
+	background-color: var(--color-surface);
+	border-radius: var(--radius-lg);
+	padding: var(--spacing-4);
+	box-shadow: var(--shadow-base);
+}
+
+.input {
+	padding: var(--spacing-2);
+	border: 1px solid var(--color-secondary-light);
+	border-radius: var(--radius-base);
+	font-size: var(--font-size-base);
+	transition: var(--transition-base);
+}
+
+.input:focus {
+	outline: none;
+	border-color: var(--color-primary);
+	box-shadow: 0 0 0 2px var(--color-primary-light);
+}
